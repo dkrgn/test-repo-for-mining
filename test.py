@@ -2,7 +2,7 @@ class TodoList:
     def __init__(self):
         self.tasks = []
 
-    def add_task(self, task):
+    def add_task(self, task, v):
         """Adds a new task to the to-do list."""
         if task not in self.tasks:
             self.tasks.append(task)
@@ -10,7 +10,7 @@ class TodoList:
         else:
             print(f"Task '{task}' already exists in the list.")
 
-    def remove_task(self, task):
+    def remove_task(self, task, v):
         """Removes a task from the to-do list."""
         if task in self.tasks:
             self.tasks.remove(task)
@@ -50,11 +50,11 @@ def main():
     # Show current tasks
     todo.show_tasks()
 
-    # Remove a task
-    todo.remove_task("Write blog post")
+    # # Remove a task
+    # todo.remove_task("Write blog post")
 
-    # Show tasks after removal
-    todo.show_tasks()
+    # # Show tasks after removal
+    # todo.show_tasks()
 
     # Mark a task as done
     todo.mark_done("Go for a walk")
