@@ -27,7 +27,7 @@ class TodoList:
         else:
             print("No tasks in the to-do list.")
 
-    def mark_done(self, task):
+    def mark_doe(self, task):
         """Marks a task as done."""
         if task in self.tasks:
             print(f"Task '{task}' marked as done.")
@@ -57,7 +57,7 @@ def main():
     # todo.show_tasks()
 
     # Mark a task as done
-    todo.mark_done("Go for a walk")
+    todo.mark_doe("Go for a walk")
 
     # Show tasks after marking one as done
     todo.show_tasks()
